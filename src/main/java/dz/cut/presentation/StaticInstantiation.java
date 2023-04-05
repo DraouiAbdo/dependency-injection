@@ -14,16 +14,16 @@ public class StaticInstantiation {
         //Business business = new Business(new DaoDb());
 
 //        2-  Static injection via a setter
-        Business business = new Business();
-        business.setDao(new DaoDb());
+//        Business business = new Business();
+//        business.setDao(new DaoDb());
 
-        System.out.println("Result : "+business.Calculate());
-        System.out.println("---------------------");
-
-        // injection another Dao object
-        business.setDao(new DaoWS());
-
-        System.out.println("Result : "+business.Calculate());
+//        System.out.println("Result : "+business.Calculate());
+//        System.out.println("---------------------");
+//
+//        // injection another Dao object
+//        business.setDao(new DaoWS());
+//
+//        System.out.println("Result : "+business.Calculate());
 
     }
 

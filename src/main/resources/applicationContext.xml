@@ -5,14 +5,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="d" class="dz.cut.dao.DaoDb"></bean>
-    <bean id="metier" class="dz.cut.metier.MetierImp1">
+    <bean id="business" class="dz.cut.business.Business">
 
         <!-- injection via a setter -->
-          <property name="dao" ref="d"></property>
+<!--          <property name="dao" ref="d"></property>-->
 
 
         <!-- injection via constructor -->
-<!--        <constructor-arg ref="dao"></constructor-arg>-->
+        <constructor-arg ref="d"></constructor-arg>
     </bean>
 
 
